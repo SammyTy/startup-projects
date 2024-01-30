@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header3</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="../css/resonsive.css">
+    <script src="https://kit.fontawesome.com/fc0d8137f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="sub__header">
+            <div class="logo"><a href="">Startup 4</a></div>
+            <div class="topNavIcons">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nvbr7">
+                <ul class="nav">
+                    <li><a href="">product</a></li>
+                    <li><a href="">pricing</a></li>
+                    <li><a href="">community</a></li>
+                </ul>
+                <div class="subLogo">
+                    <div class="close3">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <div class="logo"><a href="">Startup 3</a></div>
+                </div>
+                <div class="login">
+                        <ul class="nav2">
+                            <li><a href="">api</a></li>
+                            <li><a href="">help</a></li>
+                        </ul>
+                        <div class="btn">
+                            <button class="logins">login</button>
+                            <button class="log-in"><i class="fa-solid fa-right-to-bracket"></i> sign-in</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="sec__con">         
+                <div class="introls">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequatur modi repellendus sit accusamus eaque dolorum
+                        perferendis rem fugiat iusto.</p>
+                        <form action="" class="submit">
+                            <input type="text" placeholder="Your email" name="email">
+                            <input type="text" placeholder="Password" name="password">
+                            <button>sign-in <i class="fa-solid fa-arrow-right"></i></button>
+                            <p class="agreement">By signig up you agree to our terms and conditions</p>
+                        </form>
+                </div>
+                <div class="video">
+                    <div class="video__rap">
+                        <img src="img/img.svg" alt="youtubimag" class="youtube">
+                        <img src="img/video.svg" alt="youtubeplay" class="video__img">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur mollitia explicabo quos ut non magnam dignissimos minus expedita eos quibusdam accusamus quasi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let isNavTop = document.querySelector('.nvbr7');
+        let closeTopNav = document.querySelector('.close3');
+        let topNav =  document.querySelector('.topNavIcons');
+
+        topNav?.addEventListener('click', function(){
+            isNavTop.style.top = 0
+            showLay()
+        });          
+        // overlay funtioallity
+        let overlay = document.querySelector('.overlay');
+        closeTopNav?.addEventListener('click', function(){
+            isNavTop.style.top = "-300px"
+            hideLay()
+        });
+        overlay?.addEventListener('click', function () {
+            isNavTop.style.top = "-300px"
+            hideLay()
+        });
+        const hideLay = () => {
+            overlay.style.display ='none'
+        }
+        const showLay = () => {
+            overlay.classList.add('fadeIn')
+            overlay.style.display ='block'
+        }
+    </script>
+</body>

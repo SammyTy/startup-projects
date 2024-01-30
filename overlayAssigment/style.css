@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,700&display=swap");
+
+/* Variables */
+:root {
+  /* Colors */
+  --bg_overlay: #2f1893;
+  --bg_btn: #482be7;
+  /* fontsize */
+  --text_base: 18px;
+  --text_hero: 72px;
+  --text_para: 22px;
+  /* font family */
+  --dmSans_ff: "DM Sans", sans-serif;
+}
+/* Variables */
+
+/* RESET */
+body {
+  margin: 0;
+  padding: 5rem 8rem;
+  font-family: var(--dmSans_ff);
+  box-sizing: border-box;
+  font-size: var(--text_base);
+  width: 100%;
+  overflow-x: hidden;
+  /* we need to add overlay
+  1. is to add it to the background image property
+  2. to use the before and after pseudo elements
+  3. is to use position css
+  */
+  background-image: url("./bg-img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* color: #fff; */
+  position: relative;
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0, 0, 255, 0.433);
+}
+/* will this be the best use case */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+/* RESET */
+nav .bx-menu {
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+main {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9rem;
+}
+
+.hero_heading span {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.company_name {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.hero_details h1 {
+  font-size: var(--text_hero);
+}
+
+.hero_details p {
+  font-size: var(--para);
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.pagination {
+  width: max-content;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 15px 20px;
+}
+
+.pagination .circle {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination .circle.first {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+button {
+  width: 70%;
+  margin-top: 2.5rem;
+  padding: 8px 18px;
+  background-color: var(--bg_btn);
+  color: white;
+  border-radius: 110px;
+  cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  body {
+    padding: 2.5rem 25px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .bx-menu {
+    display: block;
+  }
+  main {
+    margin-top: 2.5rem;
+  }
+  .hero_details h1 {
+    font-size: 45px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .hero_details p {
+    width: 100%;
+  }
+
+  .hero_heading {
+    gap: 1.5rem;
+  }
+
+  .hero_heading span {
+    font-size: 25px;
+    cursor: pointer;
+  }
+}

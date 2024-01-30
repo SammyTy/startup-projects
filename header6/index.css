@@ -1,0 +1,165 @@
+:root{
+    --CD7Fhdins-size: 40px;
+    --CD7F-colrs: white;
+    --CD7F-Pcolrs:  #ff2033dd;
+    --CD7F-Scolrs: #0d0dfbf4;
+    --CD7Bt-colr:  #1010e8f4;
+    --CD7-Logocolr: #15ff0c;
+    --CD7F-LogocolrHov: #1368e8e7;
+    --CD7Bt-fnt-F: "Roboto", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* i had to use a different image here becaues the image gor from the projecct is not align */
+    background-image: url(./img/Img.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.white{
+    color: white;
+}
+.over-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.546);
+}
+@layer reset{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.sub__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 160px;
+}
+.logo{
+    width: 200px;
+}
+.logo a{
+    font-size: 26px;
+    color: var(--CD7-Logocolr);
+    width: 200px;
+    font-weight: 800;
+}
+.subLogo{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.navbar ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a{
+    padding: 10px 15px;
+    color: rgba(253, 253, 255, 0.852);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 400ms ease;
+    text-transform: capitalize;
+}
+
+.navbar ul li a:hover{
+    background:rgba(52, 255, 86, 0.814);
+    color: white;
+
+}
+.navIcons{
+    cursor: pointer;
+    display: none;
+    color: var(--CD7F-colrs);
+    font-size: 24px;
+}
+
+.close{
+    color: white;
+}
+
+@layer button{
+    .login button{
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 15px;
+        background: transparent;
+        color: rgba(234, 234, 236, 0.956);
+    }
+}
+.login button:hover{
+    background: rgba(52, 255, 116, 0.666);
+    color: white;
+}
+.log-in{
+    background: rgba(52, 255, 86, 0.814);
+    color: white;
+}
+.sec__con{
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introls{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 600px;
+}
+.introls h2{
+    font-size: 40px;
+    color: rgb(233, 233, 239);
+    font-weight: 700;
+    line-height: 60px;
+}
+.sub_introls{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+.introls p{
+    font-size: 18px;
+    color: rgb(233, 233, 239);
+    font-weight: 600;
+    line-height: 28px;
+}
+.introls .imgCon{
+    max-width: 50px;
+}
+.imgCon img{
+width: 100%;}

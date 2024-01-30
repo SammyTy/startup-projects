@@ -1,0 +1,180 @@
+:root{
+    --CD7Fhdins-size: 40px;
+    --CD7F-colrs: white;
+    --CD7F-Pcolrs:  #ff2033dd;
+    --CD7F-Scolrs: #0d0dfbf4;
+    --CD7Bt-colr:  #1010e8f4;
+    --CD7-Logocolr: #0c20ff;
+    --CD7F-LogocolrHov: #1368e8e7;
+    --CD7Bt-fnt-F: "Roboto", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+/* the @layr varables makes it posible for whatever styling i have below to overide if restyled */
+@layer reset{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.sub__header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 32px 160px;
+}
+.subLogo{
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+.subLogo .logo{
+    font-size: 22px;
+    color: var(--CD7-Logocolr);
+}
+.close{
+    color: rgb(245, 243, 238);
+    cursor: pointer;
+}
+.logo{
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font-weight: 700;
+}
+.logo a{
+    color: var(--CD7-Logocolr);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a{
+    padding: 10px 15px;
+    color: rgba(3, 3, 61, 0.842);
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 400ms ease;
+    text-transform: capitalize;
+}
+
+.navbar ul li a:hover{
+    background:blue;
+    color: white;
+
+}
+.login{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.log-in{
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 15px;
+    color: rgba(3, 3, 61, 0.842);    
+}
+
+.log-in:hover{
+    background: rgba(52, 52, 255, 0.814);
+    color: white;
+}
+.section{
+    padding: 80px 20px;
+}
+.sec__con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introls{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* max-width: 600px; */
+}
+.introls h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgba(3, 3, 61, 0.842);
+    font-weight: 600;
+    line-height: 49px;
+    margin-bottom: 49px;
+}
+.introls span{
+    font-size: 16px;
+    color: rgba(3, 3, 61, 0.842);
+    font-weight: 500;
+    cursor: pointer;
+    background: rgba(13, 208, 120, 0.961);
+    padding: 12px 18px;
+    border-radius: 22px;
+    min-width: 100px;
+}
+.introls__img{
+    max-width: 500px;
+    width: 100%;
+}
+.introls__img img{
+    width: 100%;
+    background-position: center;
+}
+.sub__introls{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+._introls p{
+    text-align: center;
+    font-size: 19px;
+    line-height: 25px;
+    padding: 18px 0;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.613);
+}
+.demacation{
+    border-left: 2px solid rgba(0, 255, 115, 0.702);
+    border-right: 2px solid rgba(0, 255, 115, 0.702);
+    padding-left: 25px;
+    padding-right: 25px;
+}

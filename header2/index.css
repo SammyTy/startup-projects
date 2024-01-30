@@ -1,0 +1,313 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(20, 20, 131);
+}
+@layer reset{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.sub__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 160px;
+}
+.logo{
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font-weight: 700;
+}
+.logo a{
+    color: rgb(255, 255, 255);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/*  */
+.navIcons{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navIcons:hover{
+    transform: scaleX(1.1);
+}
+
+.navbar .subLogo{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 14px;
+}
+.navbar .subLogo .logo{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    width: 160px;
+    font-weight: 700;
+}
+.navbar .close i{
+    font-size: 18px;
+    color: rgb(226, 226, 255);
+}
+
+/*  */
+
+.navbar ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    color: rgba(242, 242, 249, 0.943);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 400ms ease;
+    text-transform: capitalize;
+}
+
+.navbar ul li a:hover{
+    background:blue;
+    color: white;
+
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.log-in{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 15px;
+    background: rgba(25, 25, 255, 0.814);
+    color: white;
+    
+}
+
+.log-in:hover{
+    background: rgba(52, 52, 255, 0.814);
+    color: white;
+}
+.section{
+    padding: 100px 30px;
+}
+.sec__con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introls{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 600px;
+}
+.introls h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.introls p{
+    font-size: 24px;
+    color: rgb(237, 237, 255);
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 45px;
+}
+.submit{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.introls span{
+    font-size: 20px;
+    color: wheat;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid rgba(189, 180, 245, 0.737);
+    padding: 12px 20px;
+    border-radius: 20px;
+    min-width: 300px;
+    text-align: left;
+}
+.introls button{
+    display: flex;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 255, 0.67);
+    font-size: 18px;
+    padding: 12px 16px !important;
+    border-radius: 18px;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: rgb(244, 250, 253);
+    background-color: rgb(28, 187, 255);
+}
+
+.introls .agreement{
+    font-size: 19px;
+    margin-top: 30px;
+    color: rgba(244, 250, 253, 0.431);
+}
+
+
+/*              mobile view  */
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 100px;
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    .sub__header{
+        padding: 32px 30px;
+    }
+
+    .navbar .subLogo{
+        display: flex;
+    }
+    .subLogo .logo a{
+        font-size: 20px;
+
+    }
+
+    .navIcons{
+        display: block;
+    }
+    .navbar{
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        position:absolute;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background: rgb(0, 0, 0);
+    }
+
+    .navbar .nav{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .navbar .nav li a {
+       color: aliceblue;
+       margin-bottom: 20px;
+    }
+
+    .login button{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 10px;
+    }
+
+    .section{
+        padding: 50px 25px;
+    }
+    .introls h1{
+        font-size: 45px;
+    }
+    .introls p{
+        font-size: 20px;
+    }
+    .introls span,
+    .introls button
+    {
+        font-size: 18px;
+    }
+
+    /* introls resposiveness */
+    .introls h1{
+        font-size: 30px;
+    }
+    .introls p{
+        font-size: 20px;
+    }
+    .submit{
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+}
+
+  
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sub__header{
+        padding: 32px 80px;
+    }
+    .navbar .subLogo{
+        display: flex;
+    }
+    .navIcons{
+        display: block;
+    }
+    .navbar{
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        position:absolute;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background: rgb(0, 0, 0);
+    }
+    .navbar .nav{
+        flex-direction: column;
+        text-align: left;
+    }
+    .navbar ul  li a {
+        color: aliceblue;
+        margin-bottom: 40px;
+     }
+ 
+     .login button{
+         font-size: 14px;
+         font-weight: 500;
+         padding: 6px 10px;
+     }
+ 
+    
+}
+  
+
+
+

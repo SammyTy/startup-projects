@@ -1,0 +1,125 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+/* the @layr varables makes it posible for whatever styling i have below to overide if restyled */
+@layer reset{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.sub__header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 32px 160px;
+}
+.logo{
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font-weight: 700;
+}
+.logo a{
+    color: rgb(2, 2, 50);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a{
+    padding: 10px 15px;
+    color: rgba(3, 3, 61, 0.842);
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 400ms ease;
+    text-transform: capitalize;
+}
+
+.navbar ul li a:hover{
+    background:blue;
+    color: white;
+
+}
+
+.purchase{
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 24px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    color: rgba(3, 3, 61, 0.842);    
+}
+
+.purchase:hover{
+    background: rgba(52, 52, 255, 0.814);
+    color: white;
+}
+.section{
+    padding: 80px 20px;
+}
+.sec__con{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.introls{
+    max-width: 600px;
+}
+
+.introls h1{
+    font-size: 52px;
+    font-weight: 600;
+    color: rgb(1, 0, 57);
+    margin-bottom: 25px;
+}
+.introls p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(2, 6, 75);
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+.btns button{
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 24px;
+    background: transparent;
+    transition: 500ms;
+    color: aliceblue;
+    background: blue;
+}

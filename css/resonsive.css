@@ -1,0 +1,338 @@
+/* ****** mobile view ****** */
+@media only screen and (max-width: 768px){
+    header{
+        box-shadow: 0 2px 4px 0 rgba(217, 206, 206, 0.367);
+    }
+    .logo{
+        width: auto;
+        font-size: 20px;
+        text-align: left;
+    }
+    .navIcons{
+        display: block;
+    }
+    .topNavIcons{
+        display: block;
+    }
+    .sub__header{
+        padding: 15px 30px;
+        z-index: 96;
+    }
+    /* @layer nav{ */
+        .navbar{
+            height: 100vh;
+            width: 50%;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            background: rgb(29, 28, 28);
+            transition: 500ms ease-in;
+        }
+        .navbar .nav{
+            flex-direction: column;
+            text-align: left;
+        }
+        .navbar ul li a{
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            font-size: 18px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+    /* } */
+    .subLogo{
+        display: flex;
+    }
+    .subLogo .logo{
+        width: auto;
+    }
+    .navIcons{
+        display: block;
+    }
+    .nvbr7{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -300px;
+        padding: 12px 8px;
+        width: 100%;
+        height: 100px;
+        border: 0 3px 1px 0 rgba(0, 0, 0, 0.624);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: rgb(126, 10, 10);
+        transition: 500ms ease-in-out;
+        z-index: 999;
+    }
+    .nvbr7 ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .nvbr7 ul li a,
+    .nvbr7 .login ul li a {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding: 3px 8px;
+        margin-bottom: 6px;
+        text-align: left;
+        font-weight: 300;
+        color: aliceblue;
+        font-size: 16px;
+    }
+    .nvbr7 .login ul{
+        flex-direction: column;
+    }
+    .nvbr7 .login{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .login button{
+        font-size: 12px;
+        font-weight: 300;
+        margin: 0;
+        padding: 3px 4px;
+        color: var(--CD7F-colrs);
+    }
+    .close3{
+        display: block;
+    }
+    /* introls resposiveness */
+    .section{
+        padding: 80px 25px;
+    }
+
+    .sec__con{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .introls h1{
+        font-size: 30px;
+    }
+    .introls p{
+        font-size: 20px;
+    }
+    .introls span,
+    .introls button
+    {
+        font-size: 18px;
+    }
+    .submit{
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+
+  /* ********** header 4responsive ************** */
+    /* .nvbr8 .subLogo{
+        margin-bottom: 30;        
+    } */
+    .nvbr8 .subLogo{
+        width: 100%;
+        padding: 20px 8px;
+    }
+    .nvbr8 .subLogo .logo{
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        width: 100px;
+        font-weight: 700;
+    }
+    /* .nvbr8 .subLogo .logo a{
+        color: var();
+    } */
+    .nvbr8 .close i{
+        font-size: 18px;
+        color: rgb(226, 226, 255);
+    }
+    /* ********** header5 responsive ************** */
+
+    .sub__introls{
+        justify-content: left;
+    }
+    ._introls p{
+        text-align: left;    
+    }
+    .demacation{
+        border: none;
+        padding: 0;
+    }
+
+    /* ********** header 6responsive ************** */
+    .introls6 .sub_introls{
+        gap: 80px;
+    }
+    .introls6 .sub_introls h2{
+        font-size: 28px;
+        line-height: 48px;
+    }
+    .introls6 .sub_introls p{
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+}
+
+  /* ********** Tablet view ************** */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    header{
+        box-shadow: 0 2px 4px 0 rgba(217, 206, 206, 0.367);
+    }
+    .navbar{
+        height: 100vh;
+        width: 50%;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        left: -600px;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background: rgb(29, 28, 28);
+        transition: 500ms ease-in;
+    }
+    .navbar .nav{
+        flex-direction: column;
+        text-align: left;
+    }
+    .navbar ul li a{
+        display: inline-block;
+        padding: 10px 15px;
+        color: white;
+        font-size: 18px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .sub__header{
+        padding: 18px 80px;
+        z-index: 96;
+    }
+    .navIcons{
+        display: block;
+    } 
+    .topNavIcons{
+        display: block;
+    } 
+
+    .subLogo{
+        display: flex;
+    }
+   .subLogo .logo{
+        width: auto;
+    }
+    .navIcons{
+        display: block;
+    }
+    .nvbr7{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -300px;
+        padding: 16px 10px;
+        width: 100%;
+        /* height: 100px; */
+        border: 0 3px 1px 0 rgba(0, 0, 0, 0.624);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: rgb(126, 10, 10);
+        transition: 500ms ease-in-out;
+    }
+    .nvbr7 ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between
+    }
+    .nvbr7 ul li a,
+    .nvbr7 .login ul li a {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding: 3px 8px;
+        margin-bottom: 6px;
+        text-align: left;
+        font-weight: 300;
+        color: aliceblue;
+        font-size: 16px;
+    }
+    .nvbr7 .login ul{
+        flex-direction: column;
+    }
+    .nvbr7 .login{
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* itrols stylings */
+    .section{
+        padding: 100px 25px;
+    }
+    .introls{
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 800px;
+        justify-content: space-between;
+    }
+
+     .login button{
+         font-size: 14px;
+         font-weight: 500;
+         padding: 6px 10px;
+     }
+     .video{
+        max-width: 800px;
+    }
+     .close3{
+        display: block;
+    }
+    /**************************** header4  ***************************************/
+    .nvbr8 .subLogo{
+        width: 100%;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 16px;
+    }
+    /* ********** header5 responsive ************** */
+
+    .demacation{
+        border: none;
+    }
+    .sub__introls{
+        justify-content: left;
+    }
+    /* .sub__introls ._introls{ */
+        /* text-align: left; */
+    /* } */
+    /**************************** header6  ***************************************/
+    .introls6{   
+        padding: 160px 22px;
+    }
+
+    .introls6 .sub_introls{
+        gap: 80px;
+    }
+
+    .introls6 .sub_introls h2{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .introls6 .sub_introls p{
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+  

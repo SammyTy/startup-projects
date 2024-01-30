@@ -1,0 +1,147 @@
+:root{
+    --CD7Fhdins-size: 40px;
+    --CD7F-colrs: white;
+    --CD7F-Pcolrs:  #ff2033dd;
+    --CD7F-Scolrs: #0d0dfbf4;
+    --CD7Bt-colr:  #1010e8f4;
+    --CD7F-Logocolr: #03563ae0;
+    --CD7F-LogocolrHov: #1368e8e7;
+    --CD7Bt-fnt-F: "Roboto", sans-serif;
+}
+body{
+    width: 100vw;
+    overflow: hidden;
+}
+@layer reset{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.sub__header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 160px;
+}
+.logo{
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font-weight: 700;
+}
+.subLogo{
+    position: relative;
+    display: none;
+    font-size: 20px;
+    align-content: center;
+    justify-content: space-between;
+}
+.logo a{
+    color: var(--CD7F-Logocolr) ;
+}
+.navbar ul,
+.login ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.navbar ul li a,
+.login ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    color: rgba(0, 0, 0, 0.387);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 400ms ease;
+    text-transform: capitalize;
+}
+
+.navbar ul li a:hover,
+.login ul li a:hover{
+    background:blue;
+    color: white;
+
+}
+.login{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+.close{
+    color: white;
+}
+.navIcons{
+    display: none;
+}
+.section{
+    padding: 70px 20px;
+}
+.sec__con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introls{
+    max-width: 600px;
+    width: 100%
+}
+
+.introls h1{
+    font-size: 49px;
+    color: rgb(4, 4, 93);
+    font-weight: 800;
+    line-height: 49px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.video{
+    max-width: 700px;
+}
+.video__rap{
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.youtube{
+    width: 100%;
+    height: 100%;
+}
+.video__img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 60px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}

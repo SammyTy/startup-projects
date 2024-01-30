@@ -1,0 +1,101 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('./bckImage.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+    color: aliceblue;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(49, 8, 199, 0.415);
+}
+.container{
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.subHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 12px;
+}
+.subHeader ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.subHeader ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.subHeader ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: aliceblue;
+    padding: 15px 20px;
+    text-transform: capitalize;
+}
+.subHeader ul li a:hover{
+    background: rgba(255, 0, 242, 0.508);
+}
+section{
+    padding: 90px 20px;
+}
+.introls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.introls_hedins{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.introls_hedins span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.introls_hedins h2{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.introls_hedins p{
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    line-height: 30px;
+    text-align: center;
+}
+.btns button{
+    padding: 12px 20px;
+    border: 1px solid rgba(65, 255, 65, 0.712);
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 24px;
+    background: transparent;
+    transition: 500ms;
+    color: aliceblue;
+}
